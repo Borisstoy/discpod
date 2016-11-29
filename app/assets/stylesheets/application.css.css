@@ -1,0 +1,52 @@
+/*
+Error: File to import not found or unreadable: welcome.
+       Load path: /Users/Boris/Dropbox/projects/podcast/code/discpod/app/assets/stylesheets
+        on line 1 of /Users/Boris/Dropbox/projects/podcast/code/discpod/app/assets/stylesheets/application.css.scss
+
+1: @import 'welcome';
+2: /*@import 'podcasts';
+3: *\/@import 'colors';
+4: @import 'normalize';
+5: 
+6: html, body {
+
+Backtrace:
+/Users/Boris/Dropbox/projects/podcast/code/discpod/app/assets/stylesheets/application.css.scss:1
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/private/var/folders/_q/kmdkw5d14bddk8tb5h5qdw5m0000gn/T/AppTranslocation/AC5C0F12-74FC-48BF-B8B3-A015269B950F/d/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: welcome.\A        Load path: /Users/Boris/Dropbox/projects/podcast/code/discpod/app/assets/stylesheets\A         on line 1 of /Users/Boris/Dropbox/projects/podcast/code/discpod/app/assets/stylesheets/application.css.scss\A \A 1: @import 'welcome';\A 2: /*@import 'podcasts';\A 3: */@import 'colors';\A 4: @import 'normalize';\A 5: \A 6: html, body {"; }

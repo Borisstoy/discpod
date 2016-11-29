@@ -1,0 +1,47 @@
+@import 'colors';
+@import 'normalize';
+/*@import 'podcasts';
+*/
+
+#background {
+	background-image: image-url("home_background.jpg");
+	background-repeat: no-repeat;
+	height: 100vh; /*viewport height*/
+	background-position: center;
+	/*text-align: center;*/
+	background-size: cover;
+	header {
+		padding: 2.5em 0;
+		#logo {
+			float: left;
+			text-transform: uppercase;
+			font-weight: 700;
+			text-decoration: none;
+			color: $dark;
+			font-size: 1.1em;
+		}
+		nav {
+			float: right;
+			ul {
+				list-style: none;
+				margin: 0;
+				li {
+					display: inline;
+					margin-left: 2em;
+					color: $white;
+					font-weight: 300;
+					font-size: .9em;
+				}
+			}
+		}
+	}
+	h1 {
+		color: $dark;
+		font-size: 3em;
+		margin: 2.5em 0 .3em 0;
+		font-weight: 300;
+	}
+	.button {
+		margin: 1.5em 2.5% 0 0;
+	}
+}

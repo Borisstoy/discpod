@@ -1,0 +1,199 @@
+@import 'welcome';
+/*@import 'podcasts';
+*/@import 'colors';
+@import 'normalize';
+
+html, body {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+.wrapper_wide {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrapper_skinny {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.button {
+	color: $white;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 300;
+	padding: 1em 2em;
+	background: $dark;
+	border-radius: 2em;
+	outline: none;
+	border: none;
+	display: inline-block;
+	min-width: 7.5em;
+	text-align: center;
+}
+
+.button_highlight {
+	background: $mainone;
+	transition: background .4s ease-in-out;
+	&:hover {
+		background: darken($mainone, 12%);
+	}
+}
+
+.button_dark {
+	background: $dark;
+	transition: background .4s ease-in-out;
+	&:hover {
+		background: lighten($dark, 12%);
+	}
+}
+
+.button_block {
+	display: block;
+	margin: 0 auto;
+}
+
+#main_header {
+	color: $dark;
+	background: $white;
+	padding: 2.5em 0;
+	#logo {
+			float: left;
+			text-transform: uppercase;
+			font-weight: 700;
+			text-decoration: none;
+			color: $dark;
+			font-size: 1.1em;
+		}
+		nav {
+			float: right;
+			ul {
+				list-style: none;
+				margin: 0;
+				li {
+					display: inline;
+					margin-left: 2em;
+					color: $dark;
+					font-weight: 300;
+					font-size: .9em;
+				}
+			}
+		}
+}
+
+#banner {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 0 4em 0;
+	h1 {
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 300;
+		color: $white;
+		padding: 3em 0;
+		letter-spacing: .1em;
+		margin: 0 auto;
+	}
+}
+
+.podcasts_banner {
+	background-image: image-url("podcasts_banner.jpg");
+	}
+
+.sign_in_banner {
+	background-image: image-url("/sign_in_banner.jpg");
+}
+
+.sign_up_banner {
+	background-image: image-url("sign_up_banner.jpg");
+}
+
+
+.pagination:before, .pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear: both;
+}
+
+.pagination {
+	text-align: center;
+	margin: 1em 0 6em 0;
+	a, .current, .next_page, .previous_page {
+		padding: 0.8em 1.2em;
+		margin: 0 .45em;
+		border: 1px solid $lightgrey;
+		line-height: .2em;
+		text-decoration: none;
+		font-size: .7em;
+		font-weight: 700;
+		font-style: normal;
+		color: $dark;
+		border-radius: .2em;
+		&:hover {
+			color: $white;
+			background: darken($mainone, 10%);
+			border: 1px solid darken($mainone, 10%);
+		}
+	}
+	.current {
+		background: $mainone;
+		color: $white;
+		border: 1px solid darken($mainone, 10%);
+	}
+	.disabled {
+		color: $lightgrey;
+		&:hover {
+			color: $lightgrey;
+			border: 1px solid $lightgrey;
+			background: lighten($lightgrey, 10%);
+		}
+	}
+}
+
+.field {
+	margin: .5em 0 1.5em 0;
+	border-bottom: 2px solid $dark;
+	outline: none;
+	font-size: .9em;
+	color: $dark;
+	font-weight: 500;
+}
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+	width: 100%;
+	height: 1.2em;
+	padding: .8em 0 .9em .8em;
+	border: none;
+	margin-top: .5em;
+}
+
+textarea {
+	min-height: 8rem;
+	margin: .5em 0 0 0;
+}
+
+#form {
+	padding: 0 0 5em 0;
+}
