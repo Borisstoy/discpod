@@ -4,16 +4,23 @@
 			<a href="#" id="logo">Discpod</a>
 			<nav>
 				<ul>
-					<li><a href="#"></a>Explore</li>
-					<li><a href="#"></a>Sign In</li>
-					<li><a href="#"></a>Create a Podcast</li>
+					 <!-- Normally for "Users", in our case, "podcasts" are our users -->
+					<% unless podcast_signed_in? %>
+					<li><%= link_to "Explore", new_podcast_session_path %></li>
+					<li><%= link_to "Sign In", new_podcast_session_path %></li>
+					<li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
+					<% else %>
+					<li><a href="#">Dashboard</a></li>
+					<li><%= link_to "Explore", new_podcast_session_path %></li>
+					<li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
+					<% end %>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<div class="wrapper_skinny">
 		<h1>Create &amp; Discover<br>Podcasts</h1>
-		<a href="#" class="button button_highlight">Create a podcast</a>
-		<a href="#" class="button button_dark">Discover</a>
+		<%= link_to "Create a Podcast", new_podcast_registration_path, class: "button button_highlight" %>
+		<%= link_to "Explore", new_podcast_session_path, class: "button button_dark" %>
 	</div>
 </div>
