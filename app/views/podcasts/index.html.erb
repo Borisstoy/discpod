@@ -1,0 +1,29 @@
+<div id="banner" class="podcasts_banner">
+	<h1>Discover New Podcasts</h1>
+</div>
+
+<div id="podcasts" class="clearfix">
+	<div class="wrapper">
+		<ul>
+			<% @podcasts.each do |podcast| %>
+				<%= link_to podcast do %>
+					<li>
+					<img src="images/podcast_1.jpg" alt="Podcast 1">
+					<div class="podcast_overview">
+						<h2><% podcast.title %></h2>
+						<p class="episode_count">Episode 1</p>
+					</div>
+				</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+</div>
+
+<div class="pagination">
+	<span class="span previous_page disabled">Previous</span>
+	<!-- em, for will_paginate -->
+	<em class="current">1</em>
+	<a href="#">2</a>
+	<a href="#" class="next_page">Next</a>
+</div>
