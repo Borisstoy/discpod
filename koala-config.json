@@ -3,8 +3,8 @@
 	// The mappings of source directory and output directory
 	"mappings": [
 		{	
-			"src": "stylesheets",
-			"dest": "stylesheets"
+			"src": "path/to/source",
+			"dest": "path/to/output"
 		}
 	],
 

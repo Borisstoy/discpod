@@ -1,14 +1,11 @@
 @import 'colors';
 @import 'normalize';
-@import 'podcasts';
-
 
 #background {
 	background-image: image-url("home_background.jpg");
 	background-repeat: no-repeat;
 	height: 100vh; /*viewport height*/
 	background-position: center;
-	/*text-align: center;*/
 	background-size: cover;
 	header {
 		padding: 2.5em 0;

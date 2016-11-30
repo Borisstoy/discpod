@@ -1,7 +1,8 @@
+@import 'normalize';
 @import 'welcome';
 @import 'podcasts';
 @import 'colors';
-@import 'normalize';
+
 
 html, body {
 	font-family: 'Libre Franklin', sans-serif;
@@ -174,7 +175,6 @@ html {
 
 .field {
 	margin: .5em 0 1.5em 0;
-	border-bottom: 2px solid $dark;
 	outline: none;
 	font-size: .9em;
 	color: $dark;
@@ -187,6 +187,8 @@ input[type="email"], input[type="text"], input[type="password"], textarea {
 	padding: .8em 0 .9em .8em;
 	border: none;
 	margin-top: .5em;
+	background: #f1f1f1;
+	border-radius: .2em;
 }
 
 textarea {
