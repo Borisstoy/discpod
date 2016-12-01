@@ -1,4 +1,10 @@
 class EpisodesController < ApplicationController
+	# without authentification, user 1 can access user 2 creation form
+	# need for users authentification so we can't manually enter a URL and create episodes before signing in
+	# forces redirection to login page
+	# still, we want people to be able to see podcasts, e.g exception for show method
+	before_action :authenticate_podcast!, except: [:show]
+	before_filter :require_permission
 	before_action :find_podcast
 	before_action :find_episode, only: [:show, :edit, :update, :destroy]
 
@@ -53,5 +59,13 @@ class EpisodesController < ApplicationController
 
 	def find_episode
 		@episode = Episode.find(params[:id])
+	end
+
+	# method related to authentification
+	def require_permission
+		@podcast = Podcast.find(params[:podcast_id])
+		if current_podcast != @podcast
+			redirect_to root_path, notice: "Sorry, you're not allowed to view that page."
+		end
 	end
 end
