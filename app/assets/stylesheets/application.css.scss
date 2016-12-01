@@ -174,11 +174,14 @@ html {
 }
 
 .field {
-	margin: .5em 0 1.5em 0;
+	margin: .8em 0 1.5em 0;
 	outline: none;
 	font-size: .9em;
 	color: $dark;
 	font-weight: 500;
+	label {
+		font-weight: 700;
+	}
 }
 
 input[type="email"], input[type="text"], input[type="password"], textarea {
