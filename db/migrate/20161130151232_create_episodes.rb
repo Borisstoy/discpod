@@ -7,6 +7,5 @@ class CreateEpisodes < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
-    add_foreign_key :episodes, :podcast
   end
 end
