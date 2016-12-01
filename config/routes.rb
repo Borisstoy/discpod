@@ -2,5 +2,9 @@ Rails.application.routes.draw do
   	devise_for :podcasts
 	root 'welcome#index'
 
-	resources :podcasts, only: [:index, :show]
+	resources :podcasts, only: [:index, :show] do
+	# don't forget "do"
+	# create route for episodes; an episode belongs to a podcat, so it's nested under it.
+		resources :episodes
+	end
 end
