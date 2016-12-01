@@ -11,9 +11,9 @@ class ApplicationController < ActionController::Base
   	# works with signed_up users
   	# .permit method for rails5 instead of .for
   	devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:email, :password, :password_confirmation,
-  	:current_password, :title, :description, :itunes, :stitcher, :podbay)} 
+  	:current_password, :title, :thumbnail, :description, :itunes, :stitcher, :podbay)} 
   	# permited parameters for users signing up
   	devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:email, :password, :password_confirmation,
-  	:title)} 
+  	:title, :thumbnail)} 
   end
 end

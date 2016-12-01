@@ -4,6 +4,9 @@ class EpisodesController < ApplicationController
 	# forces redirection to login page
 	# still, we want people to be able to see podcasts, e.g exception for show method
 	before_action :authenticate_podcast!, except: [:show]
+	# calls the require_permission method
+	# loops through podcast
+	# if user's session != to current podcast modification, then not allowed
 	before_filter :require_permission
 	before_action :find_podcast
 	before_action :find_episode, only: [:show, :edit, :update, :destroy]
@@ -50,7 +53,7 @@ class EpisodesController < ApplicationController
 	private
 
 	def episode_params
-		params.require(:episode).permit(:title, :description)
+		params.require(:episode).permit(:title, :description, :episode_thumbnail)
 	end
 
 	def find_podcast
