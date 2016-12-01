@@ -19,7 +19,7 @@
 		<%= link_to podcasts_path do %>
 			All Podcasts
 			<span>/</span>
-			The First Podcast
+			<%= link_to @podcast.title, podcast_path(@podcast) %>
 		<% end %>
 	</div>
 
