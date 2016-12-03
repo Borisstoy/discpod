@@ -56,16 +56,15 @@
 							<div class="jp-time-holder">
 								<div class="jp-current-time"></div>
 							</div>
-
 						</div>
+
 						<div class="jp-no-solution">
 							<span>Update Required</span>
 							To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 						</div>
 					</div>
 				</div>
-				<!-- end jPlayer -->
-
+				<!-- end jPlayer -->			
 			</div>
 		</div>
 
@@ -99,15 +98,23 @@
 </div>
 
 <script>
- $(document).ready(function(){
+ $(document).ready(function() {
+
   $("#jquery_jplayer_1").jPlayer({
-   ready: function () {
-    $(this).jPlayer("setMedia", {
-    	mp3: "<%= @episode.mp3.url %>";
-    });
-   },
-   swfPath: "/js",
-   supplied: "mp3"
+    ready: function(event) {
+      $(this).jPlayer("setMedia", {
+        mp3: "<%= @episode.mp3.url %>",
+      });
+    },
+    swfPath: "http://jplayer.org/latest/dist/jplayer",
+    supplied: "mp3, oga",
+    wmode: "window",
+    useStateClassSkin: true,
+    autoBlur: false,
+    smoothPlayBar: true,
+    keyEnabled: true,
+    remainingDuration: true,
+    toggleDuration: true
   });
- });
+});
 </script>

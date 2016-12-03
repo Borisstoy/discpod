@@ -1,5 +1,5 @@
 class Episode < ApplicationRecord
-  # thanks to podcast:refernece in db migration
+  # thanks to podcast:reference in db migration
   belongs_to :podcast
 
   # taken paperclip functions from podcast.rb
