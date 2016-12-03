@@ -28,7 +28,7 @@ class EpisodesController < ApplicationController
 	end
 
 	def show
-		@episodes = Episode.where(podcast_id: @podcast).order("created_at desc").reject { |e| e.id == @episode.id }
+		@episodes = Episode.where(podcast_id: @podcast).order("created_at desc").limit(4).reject { |e| e.id == @episode.id }
 		# reject method loops through all the loops
 		# if current id == episode id, it rejects it
 	end

@@ -4,7 +4,7 @@ class PodcastsController < ApplicationController
 
 	# for index, we need to loop through all episodes, using podcastS
 	def index
-		@podcasts = Podcast.all.order('created_at desc')
+		@podcasts = Podcast.all.order('created_at desc').paginate(page: params[:page], :per_page => 12)
 	end
 
 	# for the show method, the use of singular sends us back to show 1 podcast
@@ -23,7 +23,7 @@ class PodcastsController < ApplicationController
 	private
 
 	def find_episode
-		@episodes = Episode.where(podcast_id: @podcast).order("created_at desc")
+		@episodes = Episode.where(podcast_id: @podcast).order("created_at desc").paginate(page: params[:page], :per_page => 5)
 	end
 
 	def find_podcast

@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'aws-sdk', '< 2.0'
+gem 'will_paginate', '~> 3.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
