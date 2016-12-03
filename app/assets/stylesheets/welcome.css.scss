@@ -1,4 +1,3 @@
-@import 'colors';
 @import 'normalize';
 
 #background {
@@ -24,10 +23,16 @@
 				margin: 0;
 				li {
 					display: inline;
-					margin-left: 2em;
-					color: $white;
-					font-weight: 300;
-					font-size: .9em;
+						a {
+							margin-left: 2em;
+							color: $white;
+							font-weight: 300;
+							font-size: .9em;
+							text-decoration: none;
+							&:hover {
+								color: darken($white, 30%);
+							}
+						}
 				}
 			}
 		}

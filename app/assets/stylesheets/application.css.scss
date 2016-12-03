@@ -1,7 +1,11 @@
-@import 'normalize';
-@import 'welcome';
-@import 'podcasts';
-@import 'colors';
+$mainone: #89253e; /*burgundy*/
+$mainone-light: #cc3762;
+$maintwo: #3a6186; /*blue*/
+$maintwo-light: #629fd1;
+$dark: #191919;
+$grey: #878787;
+$lightgrey: #DDDDDD;
+$white: #ffffff;
 
 html, body {
 	font-family: 'Libre Franklin', sans-serif;
@@ -103,10 +107,16 @@ html {
 				margin: 0;
 				li {
 					display: inline;
-					margin-left: 2em;
-					color: $dark;
-					font-weight: 300;
-					font-size: .9em;
+					a {
+						margin-left: 2em;
+						color: $dark;
+						font-weight: 300;
+						font-size: .9em;
+						text-decoration: none;
+						&:hover {
+							color: $mainone;
+						}
+					}
 				}
 			}
 		}
@@ -214,3 +224,7 @@ textarea {
 #form {
 	padding: 0 0 5em 0;
 }
+
+@import 'normalize';
+@import 'welcome';
+@import 'podcasts';

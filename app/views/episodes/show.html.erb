@@ -20,8 +20,8 @@
 			All Podcasts
 			<span>/</span>
 			<%= link_to @podcast.title, podcast_path(@podcast) %>
-			<span>/</span>
-			<%= @episode.title %>
+			<a><span>/</span><a>
+			<a><%= @episode.title %></a>
 		<% end %>
 	</div>
 
