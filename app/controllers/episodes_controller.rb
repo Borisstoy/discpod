@@ -7,7 +7,7 @@ class EpisodesController < ApplicationController
 	# calls the require_permission method
 	# loops through podcast
 	# if user's session != to current podcast modification, then not allowed
-	before_filter :require_permission
+	before_filter :require_permission, only: [:edit, :update, :destroy]
 	before_action :find_podcast
 	before_action :find_episode, only: [:show, :edit, :update, :destroy]
 
@@ -34,7 +34,6 @@ class EpisodesController < ApplicationController
 	end
 
 	def edit
-		
 	end
 
 	def update
