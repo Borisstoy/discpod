@@ -206,6 +206,10 @@ html {
 	}
 }
 
+.menu {
+	display: none;
+}
+
 input[type="email"], input[type="text"], input[type="password"], textarea {
 	width: 100%;
 	height: 1.2em;
@@ -228,3 +232,57 @@ textarea {
 @import 'normalize';
 @import 'welcome';
 @import 'podcasts';
+
+@media only screen and (max-width: 768px) {
+
+	#main_nav {
+		/*under 768px width, we hide the main nav*/
+		display: none;
+	}
+	#main_nav.active {
+		display: block;
+		width: 100%;
+		ul {
+			margin-top: 7%;
+			padding: 0;
+		}
+			a {
+				display: block;
+				color: $dark;
+				font-weight: 700;
+				padding: 1.2em 0 1.2em 0 !important;
+				border-bottom: 1px solid #E9E9E9 !important;
+				/*removes border for last elements*/
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+	}
+	/*pops the menu bar in the main nav*/
+	.menu {
+		display: block;
+		float: right;
+		color: $dark;
+		i {
+			font-size: 1.5em;
+			color: #dark;
+		}
+	}
+	#banner {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		margin: 0 0 4em 0;
+		h1 {
+			text-align: center;
+			font-size: 1.8em;
+			font-weight: 300;
+			color: $white;
+			padding: 3em 0;
+			letter-spacing: .1em;
+			margin: 0 auto;
+		}
+	}
+}
+
+

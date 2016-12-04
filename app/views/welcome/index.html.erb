@@ -2,7 +2,8 @@
 	<header class="clearfix">
 		<div class="wrapper_wide">
 			<%= link_to "Discpod", root_path, id:"logo" %>
-			<nav>
+			<a href="#" class="menu_welcome"><i class="fa fa-bars"></i></a>
+			<nav id="main_nav_welcome">
 				<ul>
 					<li><%= link_to "Explore", podcasts_path %></li>
 					<li><%= link_to "Sign In", new_podcast_session_path %></li>
@@ -17,3 +18,17 @@
 		<%= link_to "Explore", podcasts_path, class: "button button_dark" %>
 	</div>
 </div>
+
+<script>
+  $(document).ready(function() {
+  
+  $('.menu_welcome').click(function(e) {
+    e.stopPropagation();
+    $('#main_nav_welcome').toggleClass('active');
+  });
+
+  $(document).click(function() {
+    $('#main_nav_welcome').removeClass('active');
+  });
+});
+</script>
