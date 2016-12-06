@@ -1,24 +1,57 @@
-# README
+Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users stories
+•	Users, a.k.a, “Podcasts”, create an account, create podcast and episodes.
+•	Other users can “explore” those podcats.
+•	Thumbnails upload.
+•	MP3 upload.
+•	Set up Amazon S3 for file storage.
+•	Set up CRUD
+•	Authorized Users (AU) can create, edit, update, delete podcast / episode.
+•	AU can only view other AU podcasts.
 
-Things you may want to cover:
+Features
+•	pagination
+•	devise
+•	authentication
+•	file upload
 
-* Ruby version
+DATA
 
-* System dependencies
+PODCASTS has_many :episodes
+•	email
+•	password
+•	title
+•	description
+•	thumbnail
+•	episodes count
+•	links (itunes, stitcher, podbay)
 
-* Configuration
+EPISODES belongs_to :podcast
+•	title
+•	description
+•	podcast_id
+•	thumbnail
+•	mp3 file
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Pages
+•	Welcome page 
+•	Sign in
+•	Sign up
+•	Podcasts all
+•	Podcast single
+•	Podcast edit
+•	Episode page
+•	Episode new
+•	Episode edit
+•	Dashboard 
+welcome#index
+session#new
+registration#new
+podcast#index
+podcast#show
+podcast#edit
+episode#show
+episode#new
+episode#edit
+podcast#dashboard
