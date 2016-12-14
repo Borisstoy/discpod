@@ -48,6 +48,10 @@
 	}
 }
 
+.menu_welcome {
+	display: none;
+}
+
 @media only screen and (max-width: 768px) {
 	#main_nav_welcome {
 		/*under 768px width, we hide the main nav*/
